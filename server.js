@@ -4,7 +4,8 @@ const _ =require('lodash')
 const app=express();
 const mongoose=require('mongoose');
 require('dotenv').config();
-mongoose.connect("mongodb://127.0.0.1:27017/todoListDB")
+// mongoose.connect("mongodb://127.0.0.1:27017/todoListDB")
+mongoose.connect("mongodb+srv://anushkabisen2003:keepanote@cluster0.joymin4.mongodb.net/todoListDB?retryWrites=true&w=majority") 
 //120.0.0.1 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
